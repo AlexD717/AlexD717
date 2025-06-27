@@ -1,4 +1,12 @@
-## Hi there 👋
+## Hi, I'm Alexey Dmitriev
+
+<div align="center">
+  <img alt="general_stats" align="center" 
+       src="https://github-readme-stats.vercel.app/api?username=AlexD717&show_icons=true&theme=dark&&hide_border=false&hide_rank=true&include_all_commits=false&show=reviews" 
+       hspace="20"/>
+  <img alt="language_stats" align="center" 
+       src="https://api.githubtrends.io/user/svg/AlexD717/langs?time_range=all_time&loc_metric=changed&theme=dark&compact=false"/>
+</div>
 
 <!--
 **AlexD717/AlexD717** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
