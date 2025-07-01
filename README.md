@@ -2,7 +2,7 @@
 
 <div align="center">
   <img alt="general_stats" align="center" 
-       src="https://github-readme-stats.vercel.app/api?username=AlexD717&show_icons=true&theme=dark&&hide_border=false&hide_rank=true&include_all_commits=false&show=reviews" 
+       src="https://github-readme-stats.vercel.app/api?username=AlexD717&show_icons=true&theme=dark&&hide_border=false&hide_rank=true&include_all_commits=false&show=reviews&disable_animations=true" 
        hspace="20"/>
   <img alt="language_stats" align="center" 
        src="https://api.githubtrends.io/user/svg/AlexD717/langs?time_range=all_time&loc_metric=changed&theme=dark&compact=false"/>
