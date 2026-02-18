@@ -1,22 +1,17 @@
 ## Hi, I'm Alexey Dmitriev
 
-<div align="center">
-  <img alt="general_stats" align="center" 
-       src="https://github-readme-stats.vercel.app/api?username=AlexD717&show_icons=true&theme=dark&&hide_border=false&hide_rank=true&include_all_commits=false&show=reviews&disable_animations=true" 
-       hspace="20"/>
-</div>
+Hi, I am a developer!
 
-<!--
-**AlexD717/AlexD717** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Top Languages
 
-Here are some ideas to get you started:
+<!-- Stats Start -->
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**All Time**
+```text
+TypeScript ■■■■■■■■■■■■■■■□□□□□ 75.6% (6.9h)
+JavaScript ■■■□□□□□□□□□□□□□□□□□ 12.7% (1.2h)
+Python     ■■□□□□□□□□□□□□□□□□□□ 11.1% (1.0h)
+TOML       □□□□□□□□□□□□□□□□□□□□ 0.3% (0.0h)
+Git Config □□□□□□□□□□□□□□□□□□□□ 0.2% (0.0h)
+```
+<!-- Stats End -->
