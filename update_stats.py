@@ -15,7 +15,7 @@ CHAR_EMPTY = '□'
 BAR_WIDTH = 20     # Width of the bar
 NAME_WIDTH = 10    # Max width of language name
 
-IGNORED_LANGUAGES = ['Other', 'Fusion360', 'Fusion', 'Onshape', 'Text', 'JSON', 'YAML', 'Markdown', 'INI', 'XML', 'CAD', 'CSV', "Slack", "Chief Delphi"]
+IGNORED_LANGUAGES = ['Other', 'Fusion360', 'Fusion', 'Onshape', 'Text', 'JSON', 'YAML', 'Markdown', 'INI', 'XML', 'CAD', 'CSV', "Slack", "Chief Delphi", "Docs"]
 
 START_MARKER = "<!-- Stats Start -->"
 END_MARKER = "<!-- Stats End -->"
@@ -46,7 +46,7 @@ def update_readme():
         filtered_total_seconds = sum(l['total_seconds'] for l in filtered_languages)
         
         # Generate Markdown   
-        stats_markdown = "\n**All Time**\n```text\n"
+        stats_markdown = "**All Time**\n```text\n"
         for lang in top_languages:
             name = lang['name'][:NAME_WIDTH].ljust(NAME_WIDTH)
             percent = (lang['total_seconds'] / filtered_total_seconds * 100) if filtered_total_seconds > 0 else 0
