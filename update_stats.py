@@ -8,6 +8,7 @@ import re
 WAKATIME_API_KEY = os.environ.get('WAKATIME_API_KEY')
 BASE_URL = 'https://wakatime.com/api/v1'
 RANGE = 'all_time'
+NUM_TOP_LANGUAGES = 5
 
 CHAR_FULL = '■' 
 CHAR_EMPTY = '□' 
@@ -15,7 +16,7 @@ CHAR_EMPTY = '□'
 BAR_WIDTH = 20     # Width of the bar
 NAME_WIDTH = 10    # Max width of language name
 
-IGNORED_LANGUAGES = ['Other', 'Fusion360', 'Fusion', 'Onshape', 'Text', 'JSON', 'YAML', 'Markdown', 'INI', 'XML', 'CAD', 'CSV', "Slack", "Chief Delphi", "Docs"]
+IGNORED_LANGUAGES = ['Other', 'Fusion360', 'Fusion', 'Onshape', 'Text', 'JSON', 'YAML', 'Markdown', 'INI', 'XML', 'CAD', 'CSV', "Slack", "Chief Delphi", "Docs", "TeX"]
 
 START_MARKER = "<!-- Stats Start -->"
 END_MARKER = "<!-- Stats End -->"
@@ -41,12 +42,13 @@ def update_readme():
         languages = data['data']['languages']
         filtered_languages = [l for l in languages if l['name'] not in IGNORED_LANGUAGES]
         filtered_languages.sort(key=lambda x: x['total_seconds'], reverse=True)
-        top_languages = filtered_languages[:5]
+        top_languages = filtered_languages[:NUM_TOP_LANGUAGES]
         
         filtered_total_seconds = sum(l['total_seconds'] for l in filtered_languages)
+        filtered_total_hours = filtered_total_seconds / 3600
         
         # Generate Markdown   
-        stats_markdown = "**All Time**\n```text\n"
+        stats_markdown = f"**All Time ({round(filtered_total_hours, 1)} Hours)**\n```text\n"
         for lang in top_languages:
             name = lang['name'][:NAME_WIDTH].ljust(NAME_WIDTH)
             percent = (lang['total_seconds'] / filtered_total_seconds * 100) if filtered_total_seconds > 0 else 0
